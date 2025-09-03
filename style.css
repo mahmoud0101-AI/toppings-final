@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+}
+
+.bond {
+  background-color: green;
+  color: white;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.movies1 {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  justify-content: center;
+  text-align: center;
+}
+
+.movies1 p {
+  padding: 20px;
+  background: linear-gradient(120deg, lightblue, navy, midnightblue);
+  color: white;
+}
+
+.movies1 img {
+  width: 150px;
+  height: 150px;
+  padding-bottom: 20px;
+  margin: auto;
+  animation: rotate 4s linear infinite alternate;
+  align-items: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .movies1 {
+    display: flex;
+  }
+}
